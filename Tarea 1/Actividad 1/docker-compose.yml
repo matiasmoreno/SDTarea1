@@ -1,0 +1,11 @@
+version: '3'
+services:
+  headnode:
+    container_name: headnode
+    build: ./headnode
+    expose:
+      - "5432"
+
+  cliente:
+    container_name: cliente
+    build: ./cliente
